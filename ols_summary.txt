@@ -1,0 +1,42 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               quantity   R-squared:                       0.154
+Model:                            OLS   Adj. R-squared:                 -0.034
+Method:                 Least Squares   F-statistic:                    0.8182
+Date:                Tue, 04 Nov 2025   Prob (F-statistic):              0.674
+Time:                        14:24:11   Log-Likelihood:                -231.76
+No. Observations:                 100   AIC:                             501.5
+Df Residuals:                      81   BIC:                             551.0
+Df Model:                          18                                         
+Covariance Type:            nonrobust                                         
+==========================================================================================================
+                                             coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------------
+Intercept                                  5.6753      1.482      3.830      0.000       2.727       8.623
+C(product_line)[T.Fashion accessories]    -0.4367      1.138     -0.384      0.702      -2.700       1.827
+C(product_line)[T.Food and beverages]      0.0068      0.906      0.007      0.994      -1.795       1.809
+C(product_line)[T.Health and beauty]       0.4999      0.981      0.510      0.612      -1.452       2.452
+C(product_line)[T.Home and lifestyle]     -0.2341      1.060     -0.221      0.826      -2.343       1.875
+C(product_line)[T.Sports and travel]       0.2072      0.941      0.220      0.826      -1.666       2.080
+C(city)[T.Naypyitaw]                       0.9051      0.738      1.226      0.224      -0.564       2.374
+C(city)[T.Yangon]                          0.4203      0.784      0.536      0.593      -1.139       1.979
+C(customer_type)[T.Normal]                 0.2896      0.623      0.465      0.643      -0.950       1.529
+C(gender)[T.Male]                         -0.4587      0.614     -0.747      0.457      -1.680       0.763
+C(payment)[T.credit card]                  1.2572      0.747      1.683      0.096      -0.229       2.744
+C(payment)[T.e-wallet]                     0.7892      0.747      1.057      0.294      -0.696       2.275
+C(day_of_week)[T.Monday]                  -0.5832      1.071     -0.544      0.588      -2.715       1.548
+C(day_of_week)[T.Saturday]                -1.1573      1.128     -1.026      0.308      -3.402       1.088
+C(day_of_week)[T.Sunday]                  -1.6207      1.106     -1.466      0.147      -3.820       0.579
+C(day_of_week)[T.Thursday]                -0.6378      1.156     -0.552      0.583      -2.937       1.661
+C(day_of_week)[T.Tuesday]                  0.9806      1.143      0.858      0.393      -1.293       3.255
+C(day_of_week)[T.Wednesday]               -0.3989      1.087     -0.367      0.715      -2.562       1.764
+unit_price                                -0.0053      0.013     -0.410      0.683      -0.031       0.020
+==============================================================================
+Omnibus:                        2.006   Durbin-Watson:                   1.612
+Prob(Omnibus):                  0.367   Jarque-Bera (JB):                1.514
+Skew:                           0.096   Prob(JB):                        0.469
+Kurtosis:                       2.429   Cond. No.                         548.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
